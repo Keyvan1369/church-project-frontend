@@ -1,47 +1,68 @@
-import React from 'react'
+import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router";
+import { MdChurch } from "react-icons/md";
+
 export const Footer = () => {
   return (
- <footer className="bg-[#141414] text-gray-300 px-10 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-      {/* Left: Logo + Info */}
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">{`{Finsweet}`}</h2>
-        <p className="text-sm">A church that's relevant</p>
-        <p className="text-sm">123 Main Street, Vienna</p>
-        <p className="text-sm">info@finsweet.com</p>
-        <p className="text-sm">+43 123 456 789</p>
-      </div>
-
-      {/* Middle: Quicklinks + Social */}
-      <div>
-        <h3 className="text-white font-semibold mb-3">Quicklinks</h3>
-        <ul className="space-y-2 text-sm">
-          <li className="hover:text-orange-400 cursor-pointer">About Us</li>
-          <li className="hover:text-orange-400 cursor-pointer">Sermons</li>
-          <li className="hover:text-orange-400 cursor-pointer">Events</li>
-          <li className="hover:text-orange-400 cursor-pointer">Blog</li>
-        </ul>
-        <div className="flex gap-3 mt-4">
-          <FaTwitter className="cursor-pointer hover:text-orange-400" />
-          <FaFacebook className="cursor-pointer hover:text-orange-400" />
-          <FaInstagram className="cursor-pointer hover:text-orange-400" />
+    <footer className="bg-[#141414] text-gray-300 px-6 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div>
+          <ul className="flex flex-wrap gap-4 text-sm">
+            <li>
+              <Link
+                to="/aboutUs"
+                className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/sermon"
+                className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
+              >
+                Sermons
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/event"
+                className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
+              >
+                Events
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
+              >
+                Blog
+              </Link>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      {/* Right: Newsletter */}
-      <div>
-        <h3 className="text-white font-semibold mb-3">
-          Subscribe to get latest updates and news
-        </h3>
-        <div className="flex">
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="w-full px-3 py-2 rounded-l-md focus:outline-none text-black"
-          />
-          <button className="bg-orange-400 px-4 py-2 rounded-r-md font-semibold hover:bg-orange-500 transition">
-            Subscribe
-          </button>
+        <div className="flex justify-center gap-4 mt-4 md:mt-0">
+          {[FaTwitter, FaFacebook, FaInstagram].map((Icon, i) => (
+            <Icon
+              key={i}
+              className="cursor-pointer text-gray-300 hover:text-orange-400 transition-transform duration-200 hover:scale-105"
+              size={25}
+            />
+          ))}
+        </div>
+
+        <div className="flex items-start gap-3">
+          <MdChurch size={50} className="text-orange-400 flex-shrink-0" />
+          <div className="text-sm space-y-0.5">
+            <h2 className="text-lg font-bold text-white">Iranian Church</h2>
+            <p className="text-gray-400">A church that's relevant</p>
+            <p className="text-gray-400">123 Main Street, Vienna</p>
+            <p className="text-gray-400">info@finsweet.com</p>
+            <p className="text-gray-400">+43....</p>
+          </div>
         </div>
       </div>
     </footer>
