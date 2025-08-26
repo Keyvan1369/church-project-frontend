@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 export const Hero = () => {
   return (
-       <section
+    <section
       className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center text-white"
       style={{ backgroundImage: "url('/images/hero.jpg')" }}
     >
@@ -14,10 +14,7 @@ export const Hero = () => {
         <p className="mb-6 text-lg">
           Join us in worship, faith, and service for a better tomorrow.
         </p>
-        <button className="bg-orange-400 px-6 py-3 rounded-md font-semibold hover:bg-orange-500 transition">
-          Learn More
-        </button>
       </div>
     </section>
-  )
-}
+  );
+};

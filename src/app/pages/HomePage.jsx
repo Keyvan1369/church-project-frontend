@@ -8,7 +8,7 @@ import { Benefits } from "../../component/Benefits";
 import { CallToAction } from "../../component/CallToAction";
 import { QuoteSection } from "../../component/QuoteSection";
 import { Inspire } from "../../component/Inspire";
-import { Team } from "../../component/Team";
+
 export const HomePage = () => {
   return (
     <>

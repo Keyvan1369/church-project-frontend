@@ -5,10 +5,11 @@ import { MdChurch } from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#141414] text-gray-300 px-6 py-8">
+    <footer className="bg-[#141414] text-gray-300 px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        {/* Links */}
         <div>
-          <ul className="flex flex-wrap gap-4 text-sm">
+          <ul className="flex flex-wrap gap-4 text-sm justify-center md:justify-start">
             <li>
               <Link
                 to="/aboutUs"
@@ -44,7 +45,8 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex justify-center gap-4 mt-4 md:mt-0">
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mt-4 md:mt-0">
           {[FaTwitter, FaFacebook, FaInstagram].map((Icon, i) => (
             <Icon
               key={i}
@@ -54,14 +56,16 @@ export const Footer = () => {
           ))}
         </div>
 
-        <div className="flex items-start gap-3">
+        {/* Church Info */}
+        <div className="flex items-start gap-6 md:justify-end">
           <MdChurch size={50} className="text-orange-400 flex-shrink-0" />
-          <div className="text-sm space-y-0.5">
+          <div className="text-sm space-y-0.5 text-right">
             <h2 className="text-lg font-bold text-white">Iranian Church</h2>
-            <p className="text-gray-400">A church that's relevant</p>
-            <p className="text-gray-400">123 Main Street, Vienna</p>
-            <p className="text-gray-400">info@finsweet.com</p>
-            <p className="text-gray-400">+43....</p>
+
+            <ul>Hetzendorfer strasse 98</ul>
+            <ol>1120 Wien</ol>
+            <ol>info@gmail.com</ol>
+            <ol>+43....</ol>
           </div>
         </div>
       </div>
