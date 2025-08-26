@@ -1,10 +1,7 @@
 import React from "react";
-import { HomePage } from "./pages/HomePage.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import { HomePage } from "./pages/HomePage";
 
-const routes = [
-  
-  { path: "/", element: <HomePage /> }
-
-];
-
-export default routes;
+export const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+]);
