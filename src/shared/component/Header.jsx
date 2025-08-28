@@ -15,6 +15,12 @@ export const Header = () => {
           </Link>
         </li>
         <li>
+          <Link to="/contact" className="hover:text-orange-400 cursor-pointer">
+          Contact Us
+          </Link>
+        </li>
+        
+        <li>
           {" "}
           <Link to="/aboutUs" className="hover:text-orange-400 cursor-pointer">
             About Us
@@ -32,7 +38,7 @@ export const Header = () => {
       </ul>
 
       <button className="bg-orange-200 text-black px-4 py-2 rounded-md font-semibold hover:bg-orange-300 transition">
-        <Link to="/contact">Contact Us</Link>
+        <Link to="/signup">sign up</Link>
       </button>
     </nav>
   );

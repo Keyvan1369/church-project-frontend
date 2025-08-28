@@ -6,6 +6,8 @@ import { SermonPage } from "./pages/SermonPage";
 import { BlogPage } from "./pages/BlogPage";
 import { EventPage } from "./pages/EventPage";
 import { ContactPage } from "./pages/ContactPage";
+import { SignupPage } from "../features/auth/page/SignupPage";
+import { LoginPage } from "../features/auth/page/LoginPage";
 
 export const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
@@ -14,6 +16,10 @@ export const router = createBrowserRouter([
   { path: "/blog", element: <BlogPage /> },
   { path: "/event", element: <EventPage /> },
   { path: "/contact", element: <ContactPage /> },
+  { path: "/signup", element: <SignupPage /> },
+  { path: "/login", element: <LoginPage /> },
+
+
 
 
 
