@@ -1,9 +1,14 @@
-import { usePictureFetch } from "../app/post/PictureFetch";
+/* import { usePictureFetch } from "../app/post/PictureFetch"; */
 import { useTranslation } from "react-i18next";
 
 export const LoveCompassion = ({ count = 3 }) => {
   const { t } = useTranslation("love"); 
-  const images = usePictureFetch(count, 1200, 800);
+  /* const images = usePictureFetch(count, 1200, 800); */
+  const images = [
+  { id: 1, src: "https://rockc.creedle.io/images/191/wer-ist-jesus-christus-fuer-mich_1280x1280.webp", alt: "jesus image" },
+  { id: 2, src: "https://media.istockphoto.com/id/802249868/de/foto/cross.jpg?s=612x612&w=0&k=20&c=pd55T-6MKySm4xZyUWETzGWvo9vn5HxOQ3I_sAQ6lWQ=", alt: "kind and jesus image" },
+  { id: 3, src: "https://st5.depositphotos.com/18365422/63899/i/450/depositphotos_638999714-stock-photo-silhouettes-hands-reaching-out-hope.jpg", alt: "Third image" },
+];
 
   return (
     <section className="py-16 text-center">

@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section
       className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center text-white"
-      style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      style={{ backgroundImage: "url('https://i.swncdn.com/media/950w/via/images/2023/02/22/29578/29578-church-gettyimages-wwing_source_file.jpg')" }}
     >
       <div className="bg-black/50 absolute inset-0"></div>
       <div className="relative z-10 px-6">

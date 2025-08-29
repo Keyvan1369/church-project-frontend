@@ -7,10 +7,10 @@ export const Footer = () => {
   const { t } = useTranslation("footer");
 
   return (
-    <footer className="bg-[#141414] text-gray-300 px-4 py-8">
+    <footer className="bg-[#141414] text-gray-300 px-4 py-8 ">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
         <div>
-          <ul className="flex flex-wrap gap-4 text-sm justify-center md:justify-start">
+          <ul className="flex space-x-10 flex-wrap  gap-4 text-sm justify-center md:justify-start">
             <li>
               <Link
                 to="/aboutUs"
@@ -56,9 +56,9 @@ export const Footer = () => {
           ))}
         </div>
 
-        <div className="flex items-start gap-6 md:justify-end">
+        <div className="flex items-start gap-9 md:justify-end">
           <MdChurch size={50} className="text-orange-400 flex-shrink-0" />
-          <div className="text-sm space-y-0.5 text-right">
+          <div className="text-sm space-y-1.5  text-right">
             <h2 className="text-lg font-bold text-white">{t("name")}</h2>
             <p>{t("addressLine1")}</p>
             <p>{t("addressLine2")}</p>

@@ -12,17 +12,15 @@ import { Inspire } from "../../component/Inspire";
 export const HomePage = () => {
   return (
     <>
-    <Layout>
-      <Hero />
-      <About />
-      <LoveCompassion />
-      <Benefits />
-      <CallToAction />
-      <QuoteSection />
-      <Inspire />
-      
-    </Layout>    
+      <Layout>
+        <Hero />
+        <About />
+        <QuoteSection />
+        <Benefits />
+        <CallToAction />
+        <Inspire />
+        <LoveCompassion />
+      </Layout>
     </>
-    
   );
 };
