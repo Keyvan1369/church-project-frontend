@@ -1,21 +1,22 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link } from "react-router";
+import { signupService } from "../api/authService";
 
 export const SignUpForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
-    confirmPassword: "",
   });
 
-  const getvalue = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
+ 
   const formHandler = (e) => {
     e.preventDefault();
+    signupService(formData)
     console.log("Form submitted:", formData);
+  };
+   const getvalue = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -25,7 +26,6 @@ export const SignUpForm = () => {
           Create an Account
         </h2>
         <form className="space-y-6" onSubmit={formHandler}>
-         
           <div>
             <label
               htmlFor="name"
@@ -44,7 +44,7 @@ export const SignUpForm = () => {
               required
             />
           </div>
-          
+
           <div>
             <label
               htmlFor="email"
@@ -63,7 +63,7 @@ export const SignUpForm = () => {
               required
             />
           </div>
-         
+
           <div>
             <label
               htmlFor="password"
@@ -92,8 +92,10 @@ export const SignUpForm = () => {
 
           <p className="text-center text-sm text-gray-600 dark:text-gray-400">
             Already have an account?{" "}
-            
-             <Link to="/login" className="font-medium text-lime-700 hover:underline dark:text-lime-400">
+            <Link
+              to="/login"
+              className="font-medium text-lime-700 hover:underline dark:text-lime-400"
+            >
               Log in
             </Link>
           </p>

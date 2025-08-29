@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import { Link } from "react-router";
+import  { useState } from "react";
+import { loginService } from "../api/authService";
 
 export const LoginForm = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-  const getvalue = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const formHandler = (e) => {
     e.preventDefault();
+    loginService(formData)
     console.log("Form submitted:", formData);
+  };
+    const getvalue = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
     <section className="bg-[#C8A897] dark:bg-gray-900">
