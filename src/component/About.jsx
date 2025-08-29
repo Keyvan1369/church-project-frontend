@@ -1,15 +1,18 @@
-import React from 'react'
-
-const cards = [
-  { title: "About Us", desc: "Learn who we are" },
-  { title: "Get Involved", desc: "Join our mission" },
-  { title: "Giving Back", desc: "Support our community" },
-];
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation("about");
+
+  const cards = [
+    { title: t("card1_title"), desc: t("card1_desc") },
+    { title: t("card2_title"), desc: t("card2_desc") },
+    { title: t("card3_title"), desc: t("card3_desc") },
+  ];
+
   return (
-        <section className="py-16 text-center">
-      <h2 className="text-3xl font-bold mb-10">A Church That’s Relevant</h2>
+    <section className="py-16 text-center">
+      <h2 className="text-3xl font-bold mb-10">{t("heading")}</h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {cards.map((card, i) => (
           <div
@@ -22,5 +25,5 @@ export const About = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

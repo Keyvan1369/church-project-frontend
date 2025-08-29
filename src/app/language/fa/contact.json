@@ -1,0 +1,11 @@
+{
+  "title": "تماس با ما",
+  "subtitle": "سوالی دارید، درخواست دعا یا می‌خواهید در فعالیت‌ها شرکت کنید؟ با ما در ارتباط باشید.",
+  "emailLabel": "ایمیل شما",
+  "emailPlaceholder": "name@example.com",
+  "subjectLabel": "موضوع",
+  "subjectPlaceholder": "به ما اطلاع دهید چگونه می‌توانیم کمک کنیم",
+  "messageLabel": "پیام شما",
+  "messagePlaceholder": "پیام خود را اینجا بنویسید...",
+  "submitButton": "ارسال پیام"
+}

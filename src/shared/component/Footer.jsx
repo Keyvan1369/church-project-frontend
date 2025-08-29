@@ -1,13 +1,14 @@
-import React from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router";
 import { MdChurch } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation("footer");
+
   return (
     <footer className="bg-[#141414] text-gray-300 px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-        {/* Links */}
         <div>
           <ul className="flex flex-wrap gap-4 text-sm justify-center md:justify-start">
             <li>
@@ -15,7 +16,7 @@ export const Footer = () => {
                 to="/aboutUs"
                 className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
               >
-                About Us
+                {t("aboutUs")}
               </Link>
             </li>
             <li>
@@ -23,7 +24,7 @@ export const Footer = () => {
                 to="/sermon"
                 className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
               >
-                Sermons
+                {t("sermons")}
               </Link>
             </li>
             <li>
@@ -31,7 +32,7 @@ export const Footer = () => {
                 to="/event"
                 className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
               >
-                Events
+                {t("events")}
               </Link>
             </li>
             <li>
@@ -39,13 +40,12 @@ export const Footer = () => {
                 to="/blog"
                 className="hover:text-orange-400 cursor-pointer transition-colors duration-200"
               >
-                Blog
+                {t("blog")}
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Social Icons */}
         <div className="flex justify-center gap-6 mt-4 md:mt-0">
           {[FaTwitter, FaFacebook, FaInstagram].map((Icon, i) => (
             <Icon
@@ -56,16 +56,14 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Church Info */}
         <div className="flex items-start gap-6 md:justify-end">
           <MdChurch size={50} className="text-orange-400 flex-shrink-0" />
           <div className="text-sm space-y-0.5 text-right">
-            <h2 className="text-lg font-bold text-white">Iranian Church</h2>
-
-            <ul>Hetzendorfer strasse 98</ul>
-            <ol>1120 Wien</ol>
-            <ol>info@gmail.com</ol>
-            <ol>+43....</ol>
+            <h2 className="text-lg font-bold text-white">{t("name")}</h2>
+            <p>{t("addressLine1")}</p>
+            <p>{t("addressLine2")}</p>
+            <p>{t("email")}</p>
+            <p>{t("phone")}</p>
           </div>
         </div>
       </div>

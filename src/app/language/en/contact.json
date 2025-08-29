@@ -1,0 +1,11 @@
+{
+  "title": "Contact Us",
+  "subtitle": "Have a question, prayer request, or want to get involved? Reach out to us.",
+  "emailLabel": "Your email",
+  "emailPlaceholder": "name@example.com",
+  "subjectLabel": "Subject",
+  "subjectPlaceholder": "Let us know how we can help you",
+  "messageLabel": "Your message",
+  "messagePlaceholder": "Write your message here...",
+  "submitButton": "Send Message"
+}

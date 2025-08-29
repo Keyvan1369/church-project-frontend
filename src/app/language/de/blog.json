@@ -1,0 +1,25 @@
+{
+  "title": "Unser Blog",
+  "description": "Einblicke, Geschichten und Gedanken aus unserer Gemeinschaft.",
+  "readMore": "Weiterlesen →",
+  "posts": [
+    {
+      "id": 1,
+      "title": "Glauben im Alltag finden",
+      "excerpt": "Entdecke, wie der Glaube alltägliche Entscheidungen leiten und Frieden bringen kann.",
+      "image": "https://source.unsplash.com/600x400/?church,cross"
+    },
+    {
+      "id": 2,
+      "title": "Die Kraft der Gemeinschaft",
+      "excerpt": "Warum Teil einer Kirchengemeinde zu sein dein Leben verändern kann.",
+      "image": "https://source.unsplash.com/600x400/?community,people"
+    },
+    {
+      "id": 3,
+      "title": "Mit Sinn leben",
+      "excerpt": "Praktische Wege, deine Ziele mit Gottes Plan in Einklang zu bringen.",
+      "image": "https://source.unsplash.com/600x400/?faith,light"
+    }
+  ]
+}

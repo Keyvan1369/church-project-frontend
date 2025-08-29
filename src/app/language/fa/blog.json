@@ -1,0 +1,25 @@
+{
+  "title": "بلاگ ما",
+  "description": "نگاه‌ها، داستان‌ها و بازتاب‌هایی از جامعه ما.",
+  "readMore": "ادامه مطلب →",
+  "posts": [
+    {
+      "id": 1,
+      "title": "یافتن ایمان در زندگی روزمره",
+      "excerpt": "کشف کنید چگونه ایمان می‌تواند تصمیمات روزانه را هدایت کند و آرامش بیاورد.",
+      "image": "https://source.unsplash.com/600x400/?church,cross"
+    },
+    {
+      "id": 2,
+      "title": "قدرت جامعه",
+      "excerpt": "چرا عضو بودن در یک خانواده کلیسایی می‌تواند مسیر شما را متحول کند.",
+      "image": "https://source.unsplash.com/600x400/?community,people"
+    },
+    {
+      "id": 3,
+      "title": "زندگی با هدف",
+      "excerpt": "راه‌های عملی برای هماهنگ کردن اهداف شما با طرح خدا.",
+      "image": "https://source.unsplash.com/600x400/?faith,light"
+    }
+  ]
+}
