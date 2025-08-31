@@ -15,12 +15,21 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="bg-[#fdf7f0]">
-      <div className="py-12 lg:py-20 px-6 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl font-extrabold text-center text-[#4b2e2e]">
+    <section
+      className="relative w-full min-h-screen bg-cover bg-center flex items-center"
+      style={{
+        backgroundImage:
+          "url('https://img.freepik.com/fotos-premium/contorno-de-cruz-crista-no-fundo-do-por-do-sol-amarelo-nas-montanhas_296704-256.jpg')",
+      }}
+    >
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      <div className="relative z-10 py-12 lg:py-20 px-6 mx-auto max-w-screen-md w-full">
+        <h2 className="mb-4 text-4xl font-extrabold text-center text-white">
           {t("title")}
         </h2>
-        <p className="mb-10 text-center text-gray-700 sm:text-lg">
+        <p className="mb-10 text-center text-gray-200 sm:text-lg">
           {t("subtitle")}
         </p>
 
@@ -28,7 +37,7 @@ export const ContactForm = () => {
           <div>
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-800"
+              className="block mb-2 text-sm font-medium text-white"
             >
               {t("emailLabel")}
             </label>
@@ -45,7 +54,7 @@ export const ContactForm = () => {
           <div>
             <label
               htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-gray-800"
+              className="block mb-2 text-sm font-medium text-white"
             >
               {t("subjectLabel")}
             </label>
@@ -62,7 +71,7 @@ export const ContactForm = () => {
           <div>
             <label
               htmlFor="message"
-              className="block mb-2 text-sm font-medium text-gray-800"
+              className="block mb-2 text-sm font-medium text-white"
             >
               {t("messageLabel")}
             </label>

@@ -1,4 +1,4 @@
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTelegram, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router";
 import { MdChurch } from "react-icons/md";
 import { useTranslation } from "react-i18next";
@@ -47,13 +47,26 @@ export const Footer = () => {
         </div>
 
         <div className="flex justify-center gap-6 mt-4 md:mt-0">
-          {[FaTwitter, FaFacebook, FaInstagram].map((Icon, i) => (
-            <Icon
-              key={i}
-              className="cursor-pointer text-gray-300 hover:text-orange-400 transition-transform duration-200 hover:scale-105"
+          <a
+            href="https://www.instagram.com/jesus_haus_wien?igsh=Z3pnb2YzY2w3azVx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram
               size={25}
+              className="hover:text-orange-400 cursor-pointer"
             />
-          ))}
+          </a>
+          <a
+            href="https://t.me/+Uep8NiwD1otsfm0m"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTelegram
+              size={25}
+              className="hover:text-orange-400 cursor-pointer"
+            />
+          </a>
         </div>
 
         <div className="flex items-start gap-9 md:justify-end">
