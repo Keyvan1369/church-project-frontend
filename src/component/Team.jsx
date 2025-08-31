@@ -5,10 +5,9 @@ export const Team = () => {
   const { t } = useTranslation("team");
 
   const members = [
-    { name: "Reid Brown", role: t("roles.pastor"), img: "/images/team1.jpg" },
-    { name: "Danielle Watkins", role: t("roles.coordinator"), img: "/images/team2.jpg" },
-    { name: "Nigam Chang", role: t("roles.youthLeader"), img: "/images/team3.jpg" },
-    { name: "Santos Jovino", role: t("roles.musicDirector"), img: "/images/team4.jpg" }
+    { name: "Saeed mir Hosseini", role: t("roles.pastor"), img: "/images/team1.jpg" },
+    { name: "Afshar Aliyadeh", role: t("roles.coordinator"), img: "/images/team2.jpg" },
+  
   ];
 
   return (
