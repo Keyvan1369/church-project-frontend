@@ -1,0 +1,8 @@
+{
+  "title": "In das Konto einloggen",
+  "emailLabel": "E-Mail",
+  "passwordLabel": "Passwort",
+  "placeholderEmail": "name@beispiel.com",
+  "placeholderPassword": "••••••••",
+  "loginButton": "Einloggen"
+}

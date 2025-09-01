@@ -49,6 +49,15 @@ import enBlog from "./en/blog.json";
 import deBlog from "./de/blog.json";
 import faBlog from "./fa/blog.json";
 
+import enSignup from "./en/signup.json";
+import deSignup from "./de/signup.json";
+import faSignup from "./fa/signup.json";
+
+import enLogin from "./en/login.json";
+import deLogin from "./de/login.json";
+import faLogin from "./fa/login.json";
+
+
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -64,6 +73,8 @@ i18n.use(initReactI18next).init({
       contact: enContact,
       team: enTeam,
       blog: enBlog,
+      signup: enSignup,
+      login: enLogin
     },
     de: {
       hero: deHero,
@@ -78,6 +89,8 @@ i18n.use(initReactI18next).init({
       contact: deContact,
       team: deTeam,
       blog: deBlog,
+      signup: deSignup,
+      login: deLogin
     },
     fa: {
       hero: faHero,
@@ -92,6 +105,8 @@ i18n.use(initReactI18next).init({
       contact: faContact,
       team: faTeam,
       blog: faBlog,
+      signup: faSignup,
+      login: faLogin
     },
   },
   lng: "fa",

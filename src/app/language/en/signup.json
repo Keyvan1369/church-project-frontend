@@ -1,0 +1,12 @@
+{
+  "title": "Create an Account",
+  "fullName": "Full Name",
+  "fullNamePlaceholder": "John Doe",
+  "email": "Email",
+  "emailPlaceholder": "name@example.com",
+  "password": "Password",
+  "passwordPlaceholder": "••••••••",
+  "signupButton": "Sign Up",
+  "alreadyHaveAccount": "Already have an account?",
+  "login": "Log in"
+}

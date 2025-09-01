@@ -1,0 +1,12 @@
+{
+  "title": "ایجاد حساب کاربری",
+  "fullName": "نام و نام خانوادگی",
+  "fullNamePlaceholder": "علی رضایی",
+  "email": "ایمیل",
+  "emailPlaceholder": "name@example.com",
+  "password": "رمز عبور",
+  "passwordPlaceholder": "••••••••",
+  "signupButton": "ثبت نام",
+  "alreadyHaveAccount": "قبلاً حساب کاربری دارید؟",
+  "login": "ورود"
+}

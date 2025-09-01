@@ -1,0 +1,8 @@
+{
+  "title": "ورود به حساب کاربری",
+  "emailLabel": "ایمیل",
+  "passwordLabel": "رمز عبور",
+  "emailPlaceholder": "name@example.com",
+  "passwordPlaceholder": "••••••••",
+  "loginButton": "ورود"
+}
