@@ -10,7 +10,7 @@ export const Team = () => {
   
   ];
 
-  return (
+  return (   
     <section className="py-16 text-center">
       <h2 className="text-3xl font-bold mb-10">{t("title")}</h2>
       <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">

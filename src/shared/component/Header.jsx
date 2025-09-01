@@ -3,22 +3,20 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 export const Header = () => {
-  const { t, i18n } = useTranslation("header"); // using "header" namespace
+  const { t, i18n } = useTranslation("header");
   const [open, setOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setOpen(false); // close dropdown after selection
+    setOpen(false);
   };
 
   return (
     <nav className="bg-black text-white px-6 py-3 flex items-center justify-between shadow">
-      {/* Logo */}
       <div className="font-bold text-xl">
         <span className="text-white">{t("title")}</span>
       </div>
 
-      {/* Navigation Links */}
       <ul className="hidden md:flex gap-8 text-sm uppercase">
         <li>
           <Link to="/" className="hover:text-orange-400 cursor-pointer">
@@ -47,9 +45,7 @@ export const Header = () => {
         </li>
       </ul>
 
-      {/* Right Side: Signup + Language Dropdown */}
       <div className="flex items-center gap-4 relative">
-        {/* Signup/Login Button */}
         <Link
           to="/signup"
           className="bg-orange-200 text-black px-4 py-2 rounded-md font-semibold hover:bg-orange-300 transition"
@@ -57,7 +53,6 @@ export const Header = () => {
           {t("signup")}
         </Link>
 
-        {/* Language Dropdown */}
         <div className="relative">
           <button
             onClick={() => setOpen(!open)}

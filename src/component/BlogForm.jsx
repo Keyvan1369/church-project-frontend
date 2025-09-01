@@ -25,7 +25,7 @@ export const BlogForm = () => {
     },
   ];
 
-  return (
+  return (      
     <div className="min-h-screen bg-[#0f0f0f] text-gray-300 px-6 py-12">
       <section
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-center text-white"
